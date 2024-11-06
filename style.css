@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecf2f8;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.text-1 {
+  color: #48556a;
+  font-family: Manrope;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 140% */
+  letter-spacing: 0.01563rem;
+}
+
+.text-2 {
+  color: #6e8098;
+  font-family: Manrope;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem; /* 153.846% */
+  letter-spacing: 0.00763rem;
+}
+
+.text-3 {
+  color: #48556a;
+  font-family: Manrope;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* 153.846% */
+  letter-spacing: 0.00763rem;
+}
+
+.text-4 {
+  color: #9daec2;
+  font-family: Manrope;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 153.846% */
+  letter-spacing: 0.00763rem;
+}
+
+.text-5 {
+  color: #9daec2;
+  font-family: Manrope;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 153.846% */
+  letter-spacing: 0.3125rem;
+}
+
+.card {
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+  max-width: 20.5rem;
+  overflow: hidden;
+}
+
+.card__content__text {
+  padding: 2rem;
+}
+
+.card__content__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  height: 4rem;
+}
+
+.card__content__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.card__content_footer__author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card__content__footer__author__avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+.card__content__footer__links {
+  display: flex;
+  gap: 1rem;
+}
+
+.card__content__footer__share {
+  background-color: #6e8098;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.share-active {
+  background: #48556a;
+}
+
+.share-button-inactive {
+  background: #ecf2f8;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.spacing-075 {
+  height: 0.75rem;
+}
+
+.spacing-2 {
+  height: 2rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.display-none {
+  display: none;
+}
