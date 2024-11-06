@@ -42,17 +42,15 @@
           </p>
         </div>
 
-        <div class="spacing-2"></div>
-
-        <div id="footer" class="card__content__footer share-active">
-          <div id="links" class="card__content__footer__links">
+        <div id="footer" class="card__content__footer">
+          <div id="links" class="card__content__footer__links display-none">
             <p class="text-5">SHARE</p>
             <img src="./images/icon-facebook.svg" alt="" />
             <img src="./images/icon-twitter.svg" alt="" />
             <img src="./images/icon-pinterest.svg" alt="" />
           </div>
 
-          <div id="author" class="card__content_footer__author display-none">
+          <div id="author" class="card__content_footer__author">
             <img
               class="card__content__footer__author__avatar"
               src="./images/avatar-michelle.jpg"
@@ -63,13 +61,22 @@
               <p class="text-4">28 Jun 2020</p>
             </div>
           </div>
-          <button
-            id="share-button"
-            onclick="toggleShare()"
-            class="card__content__footer__share"
-          >
-            <img id="share" src="./images/icon-share-white.svg" alt="" />
-          </button>
+
+          <div class="share-container">
+            <button
+              id="share-button"
+              onclick="toggleShare()"
+              class="card__content__footer__share"
+            >
+              <img id="share" src="./images/icon-share-white.svg" alt="" />
+            </button>
+            <div id="bubble" class="bubble display-none">
+              <p class="text-5">SHARE</p>
+              <img src="./images/icon-facebook.svg" alt="" />
+              <img src="./images/icon-twitter.svg" alt="" />
+              <img src="./images/icon-pinterest.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
